@@ -1,0 +1,160 @@
+# Day 7 - Python Tuples and Dictionaries
+# -------------------------
+# Python Tuple
+# -------------------------
+## What is a Tuple?
+A tuple is a collection of items.
+- Written using ()
+- Ordered
+- Immutable (cannot be changed)
+
+Example:
+fruits = ("Apple", "Banana", "Mango")
+print(fruits)
+Output:
+('Apple', 'Banana', 'Mango')
+---
+
+## Tuple Indexing
+fruits = ("Apple", "Banana", "Mango")
+print(fruits[0])     # Apple
+print(fruits[1])     # Banana
+print(fruits[-1])    # Mango
+---
+
+## Tuple Slicing
+Syntax:
+tuple[start:end]
+
+Example:
+numbers = (10, 20, 30, 40, 50)
+print(numbers[1:4])
+Output:
+(20, 30, 40)
+---
+
+## Tuple Methods
+### count()
+Counts how many times a value appears.
+
+numbers = (1, 2, 2, 3, 2)
+print(numbers.count(2))
+Output:
+3
+---
+
+### index()
+Returns the first index of a value.
+
+numbers = (10, 20, 30, 20)
+print(numbers.index(30))
+Output:
+2
+---
+
+## Important Points
+- Tuple uses ()
+- Tuple is immutable
+- Supports indexing and slicing
+- Methods: count(), index()
+
+---
+
+# -------------------------
+# Python Dictionary
+# -------------------------
+
+## What is a Dictionary?
+A dictionary stores data in key-value pairs.
+
+Example:
+student = {
+    "name": "Sonam",
+    "age": 21,
+    "branch": "CSE"
+}
+---
+
+## Access Values
+print(student["name"])
+print(student["age"])
+Output:
+Sonam
+21
+---
+
+## Add New Item
+student["city"] = "Patna"
+print(student)
+Output:
+{'name': 'Sonam', 'age': 21, 'branch': 'CSE', 'city': 'Patna'}
+---
+
+## Update Value
+student["age"] = 22
+print(student["age"])
+Output:
+22
+---
+
+## Remove Item
+student.pop("age")
+print(student)
+Output:
+{'name': 'Sonam'}
+---
+
+## Get Keys
+print(student.keys())
+Output:
+dict_keys(['name', 'age'])
+---
+
+## Get Values
+print(student.values())
+Output:
+dict_values(['Sonam', 21])
+---
+
+## Loop Through Dictionary
+student = {
+    "name": "Sonam",
+    "city": "Patna"
+}
+for key, value in student.items():
+    print(key, value)
+```
+Output:
+name Sonam
+city Patna
+---
+
+# Difference Between List, Tuple and Dictionary
+| List | Tuple | Dictionary |
+|------|-------|------------|
+| [] | () | {} |
+| Mutable | Immutable | Mutable |
+| Index Based | Index Based | Key-Value Pair |
+
+---
+
+# Important Methods
+## Tuple
+- count()
+- index()
+
+## Dictionary
+- keys()
+- values()
+- items()
+- pop()
+
+---
+
+# Summary
+
+✅ Tuple uses ()
+✅ Dictionary uses {}
+✅ Tuple is immutable
+✅ Dictionary stores key-value pairs
+✅ Dictionary methods: keys(), values(), items(), pop()
